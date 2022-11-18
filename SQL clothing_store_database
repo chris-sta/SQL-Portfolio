@@ -17,4 +17,4 @@ INSERT INTO clothing_store VALUES (13,  "red lifting straps", 45913, 5, 9) ;
 INSERT INTO clothing_store VALUES (14,  "blue lifting straps", 45914, 5, 2) ;
 INSERT INTO clothing_store VALUES (15,  "green lifting straps", 45912, 5, 14) ; 
 
-SELECT * , MAX(price) FROM clothing_store ORDER BY price ;
+SELECT * FROM clothing_store ORDER BY item_id ;
