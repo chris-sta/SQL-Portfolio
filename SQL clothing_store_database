@@ -1,0 +1,20 @@
+CREATE TABLE clothing_store (id INTEGER  PRIMARY KEY, name TEXT, item_id INTEGER, price INTEGER, stock INTEGER ) ;
+
+INSERT INTO clothing_store VALUES (1, "red blouse",45312, 30, 10) ;
+INSERT INTO clothing_store VALUES (2, "yellow blouse", 45313, 30, 8) ;
+INSERT INTO clothing_store VALUES (3,  "blue blouse", 45314, 30, 12) ; 
+INSERT INTO clothing_store VALUES (4, "black blouse", 45315, 30, 5) ;
+INSERT INTO clothing_store VALUES (5,  "black trousers denim", 45122, 45, 7) ;
+INSERT INTO clothing_store VALUES (6,  "blue trousers denim", 45123, 45, 15) ;
+INSERT INTO clothing_store VALUES (7,  "red trousers denim", 45124, 45, 1) ;
+INSERT INTO clothing_store VALUES (8,  "green trousers denim", 45125, 45, 19) ;
+INSERT INTO clothing_store VALUES (9,  "Nike socks", 45010, 9, 12) ;
+INSERT INTO clothing_store VALUES (16,  "Adidas socks", 45011, 9, 8) ;
+INSERT INTO clothing_store VALUES (10,  "Puma socks", 45012, 9, 15) ;
+INSERT INTO clothing_store VALUES (11,  "Reebok socks", 45013, 9, 1) ;
+INSERT INTO clothing_store VALUES (12,  "black lifting straps", 45912, 5, 5) ;
+INSERT INTO clothing_store VALUES (13,  "red lifting straps", 45913, 5, 9) ;
+INSERT INTO clothing_store VALUES (14,  "blue lifting straps", 45914, 5, 2) ;
+INSERT INTO clothing_store VALUES (15,  "green lifting straps", 45912, 5, 14) ; 
+
+SELECT * , MAX(price) FROM clothing_store ORDER BY price ;
